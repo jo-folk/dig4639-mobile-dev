@@ -5,4 +5,5 @@ This repository contains work completed during Spring 2020 in Dr. Murray's DIG46
 The *ice* folder contains in-class exercises. 
 
 ## About Me
-This should be replaced.
+Jo folks Github: https://github.com/jo-folk?tab=repositories
+Joanna Folk is a feelance web developer seeking work.
