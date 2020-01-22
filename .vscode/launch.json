@@ -4,7 +4,10 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
         
+=======
+>>>>>>> 41965ee10b08e77bdb004c683fe44186a129778b
         {
             "type": "node",
             "request": "launch",
@@ -15,6 +18,7 @@
             ]
         },
         {
+<<<<<<< HEAD
         
             "type": "node",
             "request": "attach",
@@ -30,6 +34,13 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8081",
             "webRoot": "${workspaceFolder}/ice/w2a/node_index.js"
+=======
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}/ice/w2a"
+>>>>>>> 41965ee10b08e77bdb004c683fe44186a129778b
         }
     ]
 }
