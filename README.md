@@ -7,3 +7,5 @@ The *ice* folder contains in-class exercises.
 ## About Me
 Jo folks Github: https://github.com/jo-folk?tab=repositories
 Joanna Folk is a feelance web developer seeking work.
+
+This is a sample change of a local host repository.
