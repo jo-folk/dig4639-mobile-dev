@@ -1,6 +1,6 @@
 class Adder {
-    constructor(a, b, _button){
-        this.button = _button;
+    constructor(a, b){
+        //this.button = _button;
         this.props.a = a;
         this.props.b = b;
         this.props.sum;
