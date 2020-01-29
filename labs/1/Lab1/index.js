@@ -1,11 +1,16 @@
 const Adder = require("./Adder.js");
 
+let myAdder = new Adder(
+    {
+        a: 5,
+        b: 10
+    }
+);
 
-let x = document.getElementById("a");
-let y = document.getElementById("b");
 
-let myAdder = new Adder(x, y);
+console.log(myAdder.render());
 
-myAdder.onClick();
+
+
 
 

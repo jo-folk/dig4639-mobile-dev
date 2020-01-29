@@ -1,21 +1,20 @@
 class Adder {
-    constructor(a, b){
-        //this.button = _button;
-        this.props.a = a;
-        this.props.b = b;
-        this.props.sum;
-        //this.button.addEventListener("click", this.onClick)
+    constructor(props){
+        this.props = props;
+        this.sum;
     }
     sum() {
-        this.props.sum = this.props.a + this.props.b;
-        return (this.props.sum);
+        this.sum = this.props.a + this.props.b;
+        if (this.props.a== undefined || this.props.b == undefined){
+            this.sum = null;
+        }
+        return (this.sum);
     } 
-    onclick(){
-        this.sum();
-        this.render();
-    }
+
     render(){
-        return '<p> The sum of '+this.props.a+' and '+this.props.b+' is '+this.props.sum+'</p>';
+        this.sum();
+        return `<p> The sum of ${this.props.a} and ${this.props.b} is ${this.sum}</p>`;
+
     }
 }
 module.exports = Adder;
