@@ -9,12 +9,12 @@ class Adder {
             this.sum = null;
         }
         return (this.sum);
+
     } 
 
     render(){
         this.sum();
         return `<p> The sum of ${this.props.a} and ${this.props.b} is ${this.sum}</p>`;
-
     }
 }
 module.exports = Adder;
