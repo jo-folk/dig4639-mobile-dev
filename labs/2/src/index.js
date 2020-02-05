@@ -1,7 +1,6 @@
 
-import Card from "./components/Cards/index.js";
+import Card from "./components/Card/index.js";
 
-let Card; // This creates a reference to the Card Class
 
 function runOnLoad()
 {
