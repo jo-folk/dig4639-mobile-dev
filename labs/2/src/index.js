@@ -1,4 +1,6 @@
-// Import correct component
+
+import Card from "./components/Cards/index.js";
+
 let Card; // This creates a reference to the Card Class
 
 function runOnLoad()
@@ -12,3 +14,5 @@ function runOnLoad()
 }
 
 window.addEventListener("DOMContentLoaded", runOnLoad);
+
+export default Card;
