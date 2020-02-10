@@ -4,12 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
-=======
     "build": "webpack",
     "watch": "webpack --watch"
 
@@ -24,5 +18,4 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
->>>>>>> ce73bab964e582ccd480b6238d64891d9537e2a6
 }
