@@ -8,6 +8,7 @@ class Adder {
         if (this.props.a== undefined || this.props.b == undefined){
             this.sum = null;
         }
+        
         return (this.sum);
 
     } 
