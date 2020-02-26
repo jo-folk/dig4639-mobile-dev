@@ -1,28 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import todoList from './todoList.json';
 
-const toDoList1 = [
-  {completed: true, priority: 1, content : "demo 1"},
-  {completed: true, priority: 2, content : "demo 2"},
-  {completed: false, priority: 3, content : "demo 3"}
-]; 
 
 function ToDoItem(props){
-  return <p>{props.content}</p>
+  return <p className="card">{props.content}</p>
 }
 
 
-function App() {
-  let array = toDoList1.map((value) =>
-  <ToDoItem content ={value.content} 
-            priotity = {value.priority}
-            completed = {value.completed} 
-    />
-  )
-  return (
-    array
-  );
+class App extends React.Component {
+  
+  constructor (props){
+    super(props);
+    this.state ={
+      todoList : todoList,
+            showOnlyCOmpletedTasks: false
+    }
+  }
+
+  addTask(){
+    let newtask = 
+    {"content": "task 3", "priority": 3, "completed": false}
+    let currentList = this.state.todoList
+    currentList.push(newtask)
+    this.setState({todoList: currentList})
+  }
+
+  render() {
+    return (
+      <>
+      <div className="inputTask">
+        <input type="button" value="Add Task"onClick={()=> this.addTask()}/>
+        <input type="checkbox" ref = "completedfilter"
+        onchange={(e)=> this.setsate({showOnlyUncompletedTasks: e.target.checked})}
+        id = "completedFilter" name="completedFilter" value="completed"/>
+      <label htmlFor="completedFilter">Show only uncompleted tasks</label>
+      </div>
+      {(this.state.completedFilter ?
+      this.state.todoList.filter((v)=> v.completed)
+      :
+      this.state.todoList)
+      .map((v, i) => <TodoItem key ={i} priority = {v.priority}
+      conent = {v.content} completed={v.completed}/>)}
+      </>
+    );
+  }
 }
+
 
 export default App;
