@@ -4,9 +4,9 @@ import todoList from './todoList.json';
 
 
 class TodoItem extends React.Component{
-  render(props){
+  render(){
   return <p className="card">{this.props.content}<input type="button" value ="X"
-  </p>;
+  onClick={()=> this.props.removeTask(this.props.id)}/></p>;
   }
 }
 
@@ -16,19 +16,24 @@ class App extends React.Component {
     super(props);
     this.state ={
       todoList : todoList,
-            showOnlyUncompletedTasks: false
+          showOnlyUncompletedTasks: false
     }
   }
+
   removeTask(taskID){
     console.log(this.state.todoList);
+    console.log(taskID);
+    console.log(this.statetodoList[0].id)
     let newList = this.state.todoList.filter((task)=> (task.id !== taskID));
     this.setState({todoList: newList});
   }
+
   addTask(){
     console.log(this.refs.taskContent.value);
     let newtask = 
-      {"id": this.state.currentID,"content": "Task 3", "priority": 3, "completed": false};
+      {"id": this.currentID,"content": "Task 3", "priority": 3, "completed": false};
     this.currentID ++;
+
     let currentList = this.state.todoList;
     currentList.push(newtask);
     this.setState({todoList: currentList});
@@ -48,13 +53,14 @@ class App extends React.Component {
         <input type="checkbox" ref = "completedFilter"
         onChange={(e)=> this.setState({showOnlyUncompletedTasks: e.target.checked})}
         id="completedFilter" name="completedFilter" value="completed"/>
-      <label htmlFor="completedFilter">Show only uncompleted tasks</label>
+      <label htmlFor="completedFilter"> Show only uncompleted tasks</label>
       </div>
       {(this.state.showOnlyUncompletedTasks ?
       this.state.todoList.filter((v)=> !v.completed)
       :
       this.state.todoList)
-      .map((v, i) => <TodoItem id = v.id key ={i} priority = {v.priority} removeTask= (id)this.removeTask
+      .map((v, i) => <TodoItem id={v.id} key={i} priority={v.priority} 
+      removeTask= {(id)=> this.removeTask(id)}
       content = {v.content} completed={v.completed}/>)}
       </>
     );
