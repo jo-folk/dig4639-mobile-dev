@@ -1,15 +1,12 @@
-
 import React from 'react';
 import { View } from 'react-native';
-import WeatherCardList from './components/WeatherCardList';
-
-
+import CardList from "./components/CardList";
 
  class App extends React.Component {
   render() {
     return (
       <View>
-        <WeatherCardList />
+        <CardList />
       </View>
     );
   }
