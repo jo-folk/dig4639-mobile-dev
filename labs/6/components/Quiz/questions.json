@@ -1,0 +1,109 @@
+[
+  {
+    "question": "What is Jo's favorite food?",
+    "answers" :
+    [
+      {"text": "Lasagne",
+      "correct": false
+      },
+      {
+        "text": "Pizza",
+        "correct": false
+      },
+      {
+        "text": "Ice Cream",
+        "correct": false
+      },
+      {
+        "text": "Tacos",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "What is Jo's favorite movie?",
+    "answers" :
+    [
+      {"text": "The Godfather",
+      "correct": false
+      },
+      {
+        "text": "Some Like it Hot",
+        "correct": true
+      },
+      {
+        "text": "Frozen",
+        "correct": false
+      },
+      {
+        "text": "Happy Feet",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How does Jo like her coffee?",
+    "answers" :
+    [
+      {"text": "She Doesn't",
+      "correct": false
+      },
+      {
+        "text": "A little coffee with her cream",
+        "correct": false
+      },
+      {
+        "text": "6 Sugars",
+        "correct": false
+      },
+      {
+        "text": "Any way. Any day.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "What are the names of Jo's pets?",
+    "answers" :
+    [
+      {"text": "Mowzer & Mocha",
+      "correct": true
+      },
+      {
+        "text": "Bonnie & Clyde",
+        "correct": false
+      },
+      {
+        "text": "Mittens & Boots",
+        "correct": false
+      },
+      {
+        "text": "Fluffy & Buzz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What style is Jo's condo decor?",
+    "answers" :
+    [
+      {"text": "Farmhouse",
+      "correct": false
+      },
+      {
+        "text": "Mid-century Modern",
+        "correct": false
+      },
+      {
+        "text": "Traditional Glam",
+        "correct": false
+      },
+      {
+        "text": "Nautical Scandinavian",
+        "correct": true
+      }
+    ]
+  }
+]
+
+  
