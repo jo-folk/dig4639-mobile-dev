@@ -79,9 +79,7 @@ class ContactApp extends React.Component {
         return (
         <div>
             <h1>Jo's Contact Application</h1>
-
             <div className="container">
-
                 <div className="left">
                     <div>
                         <fieldset>
