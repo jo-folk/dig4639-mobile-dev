@@ -112,7 +112,7 @@ class ContactApp extends React.Component {
             
                 <div className="right">
                     <fieldset className="contacts">
-                        <h2>Contact List</h2>
+                        <h2>Contacts</h2>
                         {this.state.contacts.map((value, index) => {
                             return (
                                 <fieldset className="card">
